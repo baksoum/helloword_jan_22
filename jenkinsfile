@@ -27,9 +27,9 @@ pipeline {
          echo'Image step'
        }
       }
-      stage('new'){
+      stage('new-dev-branch'){
        steps{
-         echo'new branch add for pull request'
+         echo'new branch add (dev) for pull request'
        }
       }
     
