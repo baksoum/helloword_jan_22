@@ -10,7 +10,7 @@ pipeline {
          sh 'mvn install'
          sh 'mvn package'
        }
-    }
+     }
       stage('test'){
        steps{
          sh 'mvn test'
@@ -27,12 +27,8 @@ pipeline {
          echo'Image step'
        }
       }
-      stage('new-dev-branch'){
-       steps{
-         echo'new branch add (dev) for pull request'
-       }
-      }
-    
+
+
     }
 
 }
